@@ -158,6 +158,7 @@ const RenderBody = ({ home, projects, meta }) => (
             </a>
         </Hero>
         <Section>
+            <h2 className="mb-6 font-bold">Recent Work</h2>
             {projects.map((project, i) => (
                 <ProjectCard
                     key={i}
