@@ -22,7 +22,7 @@ const Hero = styled("div")`
     }
 
     h1 {
-        margin-bottom: 1em;
+        margin-bottom: .4em;
 
         a {
             text-decoration: none;
@@ -46,6 +46,18 @@ const Hero = styled("div")`
 
             }
         }
+    }
+
+    p {
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+
+    button {
+      p {
+        margin-bottom: 0px !important;
+      }
     }
 `
 
@@ -136,6 +148,7 @@ const RenderBody = ({ home, projects, meta }) => (
         <Hero>
             <>
                 {RichText.render(home.hero_title)}
+                {RichText.render(home.content)}
             </>
             <a href={home.hero_button_link.url}
                target="_blank" rel="noopener noreferrer">
@@ -196,20 +209,27 @@ export const query = graphql`
             allHomepages {
                 edges {
                     node {
-                        hero_title
-                        hero_button_text
-                        hero_button_link {
-                            ... on PRISMIC__ExternalLink {
-                                _linkType
-                                url
-                            }
+                      hero_title
+                      hero_button_text
+                      hero_button_link {
+                          ... on PRISMIC__ExternalLink {
+                              _linkType
+                              url
+                          }
+                      }
+                      content
+                      about_title
+                      about_bio
+                      about_links {
+                        about_link {
+                          ... on PRISMIC__ExternalLink {
+                            _linkType
+                            url
+                          }
                         }
-                        content
-                        about_title
-                        about_bio
-                        about_links {
-                            about_link
-                        }
+                        about_link_text
+                      }
+                        
                     }
                 }
             }

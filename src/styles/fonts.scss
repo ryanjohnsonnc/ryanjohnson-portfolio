@@ -1,11 +1,17 @@
-@import url('https://rsms.me/inter/inter.css');
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://use.typekit.net/taz3mmk.css');
 
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: upgrade, sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
     html {
-        font-family: 'Inter var', sans-serif;
+        font-family: upgrade, sans-serif;
     }
 }

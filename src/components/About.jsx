@@ -82,27 +82,27 @@ const AboutActions = styled("div")`
 
 const About = ({ bio, socialLinks }) => (
     <AboutContainer>
-        <AboutLinkContainer>
-            {socialLinks.map((social, i) => (
-                <AboutLink
-                    key={i}
-                    href={social.about_link[0].spans[0].data.url}
-                    target="_blank" rel="noopener noreferrer">
-                    {social.about_link[0].text}
-                    <span>&#8594;</span>
-                </AboutLink>
-            ))}
-        </AboutLinkContainer>
-        <AboutBio>
-            {RichText.render(bio)}
-        </AboutBio>
-        <AboutActions>
-            <a href="mailto:marguerite.roth@gmail.com" target="_blank" rel="noopener noreferrer">
-                <Button className="Button--secondary">
-                    Email me
-                </Button>
-            </a>
-        </AboutActions>
+      <AboutLinkContainer>
+        {socialLinks.map((social, i) => (
+          <AboutLink
+              key={i}
+              href={social.about_link.about_link}
+              target="_blank" rel="noopener noreferrer">
+              {social.about_link.about_link_text}
+              <span>&#8594;</span>
+          </AboutLink>
+        ))}
+      </AboutLinkContainer>
+      <AboutBio>
+          {RichText.render(bio)}
+      </AboutBio>
+      <AboutActions>
+          <a href="mailto:ryan@echodistrict.com" target="_blank" rel="noopener noreferrer">
+              <Button className="Button--secondary">
+                  Email me now
+              </Button>
+          </a>
+      </AboutActions>
     </AboutContainer>
 )
 

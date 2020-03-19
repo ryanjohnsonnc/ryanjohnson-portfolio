@@ -8,6 +8,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
     "gatsby": "^2.12.0",
+    "gatsby-cli": "^2.10.11",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-catch-links": "^2.0.12",
     "gatsby-plugin-emotion": "^4.1.0",
@@ -16,12 +17,12 @@
     "gatsby-plugin-offline": "^3.0.8",
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-resolve-src": "^2.0.0",
-    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sass": "^2.1.31",
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-source-filesystem": "^2.1.26",
     "gatsby-source-prismic-graphql": "3.4.0-beta.1",
     "gatsby-transformer-sharp": "^2.2.16",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "prismic-reactjs": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -38,7 +39,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.0.11",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "tailwindcss": "^1.2.0"
   },
   "keywords": [
     "gatsby",

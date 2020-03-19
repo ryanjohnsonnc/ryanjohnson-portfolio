@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Prist | Gatsby & Prismic Starter`,
-        description: `A starter powered by Gatsby and Prismic to showcase portfolios and blogs.`,
-    author: `Marguerite Roth | marguerite.io`,
+    title: `Ryan Johnson | Product Developer`,
+    description: `A static website generated with Gatsby, managed by Prismic.io and powered by Netlify.`,
+    author: `Ryan Johnson`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +10,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-image`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-emotion`,
@@ -26,7 +34,7 @@ module.exports = {
     {
         resolve: 'gatsby-source-prismic-graphql',
         options: {
-            repositoryName: 'prist', // (REQUIRED, replace with your own)
+            repositoryName: 'ryanswebsite',
             linkResolver: () => post => `/${post.uid}`,
         }
     },
