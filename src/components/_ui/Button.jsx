@@ -5,7 +5,7 @@ import dimensions from "styles/dimensions";
 
 const ButtonContainer = styled("button")`
     padding: 1em 2em;
-    background: ${colors.blue400};
+    background: ${colors.blue600};
     font-weight: 600;
     color: white;
     outline: none;
@@ -31,24 +31,24 @@ const ButtonContainer = styled("button")`
         top: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, ${colors.blue400} 0%, ${colors.green500} 100%);
+        background-color: ${colors.blue500};
         z-index: -1;
     }
 
     &:hover {
         cursor: pointer;
-        background: transparent;
+        background-color: ${colors.blue500};
         transition: background 100ms ease-in-out;
     }
 
     &.Button--secondary {
-        background: ${colors.blue200};
-        color: ${colors.blue600};
+        background: ${colors.orange600};
+        color: white;
         padding: 0.95em 1.8em;
         font-size: 0.95rem;
 
         &:hover {
-            background: ${colors.blue300};
+            background: ${colors.orange500};
             transition: background 100ms ease-in-out;
         }
     }

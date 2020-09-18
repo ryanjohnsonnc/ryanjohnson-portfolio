@@ -1,14 +1,15 @@
 //theme colors and tints (dark900 to normal500 to light100)
 const colors = {
-    blue900: "#192c4c",
-    blue800: "#2a4a7f",
-    blue700: "#3a67b2",
-    blue600: "#4b84e5",
-    blue500: "#5393fe",
-    blue400: "#73abff",
-    blue300: "#cbdfff",
-    blue200: "#e3efff",
-    blue100: "#f1f8ff",
+    // Commented out the blue override from the preset. I like Tailwinds colors more"
+    blue900: "#2A4365",
+    blue800: "#2C5282",
+    blue700: "#2B6CB0",
+    blue600: "#3182CE",
+    blue500: "#4299E1",
+    blue400: "#63B3ED",
+    blue300: "#90CDF4",
+    blue200: "#BEE3F8",
+    blue100: "#EBF8FF",
 
     green600: "#61A840",
     green500: "#6CBB47",
