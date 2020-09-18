@@ -173,13 +173,13 @@ const RenderBody = ({ home, projects, meta }) => (
                 See more work <span>&#8594;</span>
             </WorkAction>
         </Section>
-        <Section>
+        {/* <Section>
             {RichText.render(home.about_title)}
             <About
                 bio={home.about_bio}
                 socialLinks={home.about_links}
             />
-        </Section>
+        </Section> */}
     </>
 );
 
