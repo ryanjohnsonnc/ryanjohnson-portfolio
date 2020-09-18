@@ -172,13 +172,6 @@ const RenderBody = ({ home, projects, meta }) => (
         {RichText.render(home.hero_title)}
         {RichText.render(home.content)}
       </>
-      <a
-        href={home.hero_button_link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>{RichText.render(home.hero_button_text)}</Button>
-      </a>
     </Hero>
     <Section>
       <h2 className="mb-6 font-bold">Recent Work</h2>

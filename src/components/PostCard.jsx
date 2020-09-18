@@ -7,23 +7,29 @@ import colors from "styles/colors"
 import PropTypes from "prop-types"
 
 const PostCardContainer = styled(Link)`
-  border: 1px solid ${colors.grey200};
+  border: 2px solid white;
   padding: 3em 2.5em 2.25em 2.5em;
   border-radius: 3px;
   text-decoration: none;
   color: currentColor;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.00);
   transition: all 150ms ease-in-out;
+  background-color: ${colors.green500};
+
+  .PostCardAction {
+    color: white;
+  }
 
   &:hover {
-    box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.2);
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    background-color: ${colors.green600};
 
     .PostCardAction {
-      color: ${colors.blue500};
+      color: white;
       transition: all 150ms ease-in-out;
 
       span {
@@ -37,12 +43,13 @@ const PostCardContainer = styled(Link)`
 
 const PostCategory = styled("h6")`
   font-weight: 600;
-  color: ${colors.grey600};
+  color: white;
 `
 
 const PostTitle = styled("h3")`
   margin: 0;
   margin-top: 0.5em;
+  color: white;
 `
 
 const PostMetas = styled("div")`
@@ -51,7 +58,7 @@ const PostMetas = styled("div")`
   margin-top: 1.5em;
   justify-content: space-between;
   font-size: 0.85em;
-  color: ${colors.grey600};
+  color: white;
 `
 
 const PostAuthor = styled("div")`
@@ -68,6 +75,7 @@ const PostDescription = styled("div")`
 
   p:last-of-type {
     margin: 0;
+    color: white;
   }
 `
 
