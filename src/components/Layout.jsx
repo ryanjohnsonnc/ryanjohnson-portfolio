@@ -15,6 +15,7 @@ const LayoutContainer = styled.div`
   padding-left: ${dimensions.paddingHorizontalDesktop}em;
   padding-right: ${dimensions.paddingHorizontalDesktop}em;
   margin: 0 auto;
+  background-color: white;
 
   @media (max-width: ${dimensions.maxwidthTablet}px) {
     padding-left: ${dimensions.paddingHorizontalTablet}em;

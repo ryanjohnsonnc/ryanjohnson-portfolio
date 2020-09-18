@@ -6,7 +6,6 @@ import { graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
 import colors from "styles/colors"
 import dimensions from "styles/dimensions"
-import Button from "components/_ui/Button"
 import Layout from "components/Layout"
 import ProjectCard from "components/ProjectCard"
 const Hero = styled("div")`
@@ -172,13 +171,6 @@ const RenderBody = ({ home, projects, meta }) => (
         {RichText.render(home.hero_title)}
         {RichText.render(home.content)}
       </>
-      <a
-        href={home.hero_button_link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>{RichText.render(home.hero_button_text)}</Button>
-      </a>
     </Hero>
     <Section>
       <h2 className="mb-6 font-bold">Recent Work</h2>
