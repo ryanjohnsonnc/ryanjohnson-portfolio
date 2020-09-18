@@ -7,6 +7,7 @@ import colors from "styles/colors";
 import PropTypes from "prop-types";
 
 const ProjectCardContainer = styled(Link)`
+    position: relative;
     display: grid;
     grid-template-columns: 4fr 7fr;
     box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
@@ -28,7 +29,7 @@ const ProjectCardContainer = styled(Link)`
     }
 
     &:hover {
-        box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.2);
         transition: all 150ms ease-in-out;
 
         .ProjectCardAction {
@@ -50,6 +51,10 @@ const ProjectCardContainer = styled(Link)`
         .ProjectCardImageContainer::before {
             opacity: 0.2;
             transition: all 150ms ease-in-out;
+        }
+
+        .ProjectCardTitle {
+            color: ${colors.blue600};
         }
     }
 `
@@ -89,6 +94,8 @@ const ProjectCardCategory = styled("h6")`
 const ProjectCardTitle = styled("h3")`
     margin-bottom: 0.5em;
     margin-top: 0.5em;
+    font-weight: 600;
+    color: ${colors.grey800}
 `
 
 const ProjectCardBlurb = styled("div")`
@@ -163,7 +170,7 @@ const ProjectCard = ({ category, title, description, thumbnail, uid}) => (
             <ProjectCardCategory>
                 {category[0].text}
             </ProjectCardCategory>
-            <ProjectCardTitle>
+            <ProjectCardTitle className="ProjectCardTitle">
                 {title[0].text}
             </ProjectCardTitle>
             <ProjectCardBlurb>
