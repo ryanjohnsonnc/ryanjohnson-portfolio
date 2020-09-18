@@ -42,6 +42,11 @@ const typeStyles = css`
 
   p {
     line-height: 1.9;
+    margin-bottom: 1.3rem;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
   }
 
   a {

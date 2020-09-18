@@ -9,8 +9,8 @@ import colors from "styles/colors"
 import Layout from "components/Layout"
 
 const PostHeroContainer = styled("div")`
-  max-height: 500px;
-  overflow: hidden;
+  // max-height: 500px;
+  // overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -75,10 +75,9 @@ const PostBody = styled("div")`
 
 const PostMetas = styled("div")`
   max-width: 550px;
-  margin: 0 auto;
+  margin: 2em auto;
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
   justify-content: space-between;
   font-size: 0.85em;
   color: ${colors.grey600};
