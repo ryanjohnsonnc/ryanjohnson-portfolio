@@ -147,6 +147,7 @@ const ProjectCardImageContainer = styled("div")`
         height: 100%;
         left: 0;
         top: 0;
+        z-index: 2;
         background: ${colors.blue600};
         mix-blend-mode: multiply;
         opacity: 0;
@@ -154,6 +155,8 @@ const ProjectCardImageContainer = styled("div")`
     }
 
     img {
+        position: relative;
+        z-index: 4;
         max-width: 400px;
         width: 100%;
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
